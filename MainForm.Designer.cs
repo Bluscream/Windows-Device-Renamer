@@ -41,56 +41,59 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(293, 15);
+            this.label1.Location = new System.Drawing.Point(332, 3);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(74, 13);
+            this.label1.Size = new System.Drawing.Size(77, 13);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Friendly Name";
+            this.label1.Text = "Friendly Name:";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(373, 12);
+            this.textBox1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.textBox1.Location = new System.Drawing.Point(411, 0);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(219, 20);
             this.textBox1.TabIndex = 3;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(373, 38);
+            this.textBox2.Location = new System.Drawing.Point(411, 26);
             this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(219, 20);
             this.textBox2.TabIndex = 5;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(295, 41);
+            this.label2.Location = new System.Drawing.Point(372, 29);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(72, 13);
+            this.label2.Size = new System.Drawing.Size(37, 13);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Device Name";
+            this.label2.Text = "UUID;";
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(373, 64);
+            this.textBox3.Location = new System.Drawing.Point(411, 52);
             this.textBox3.Name = "textBox3";
+            this.textBox3.ReadOnly = true;
             this.textBox3.Size = new System.Drawing.Size(219, 20);
             this.textBox3.TabIndex = 7;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(297, 67);
+            this.label3.Location = new System.Drawing.Point(336, 55);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(70, 13);
+            this.label3.Size = new System.Drawing.Size(73, 13);
             this.label3.TabIndex = 6;
-            this.label3.Text = "Manufacturer";
+            this.label3.Text = "Manufacturer:";
             // 
             // button1
             // 
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button1.AutoSize = true;
-            this.button1.Location = new System.Drawing.Point(1134, 415);
+            this.button1.Location = new System.Drawing.Point(576, 415);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(42, 23);
             this.button1.TabIndex = 8;
@@ -103,14 +106,15 @@
             this.treeView1.Dock = System.Windows.Forms.DockStyle.Left;
             this.treeView1.Location = new System.Drawing.Point(0, 0);
             this.treeView1.Name = "treeView1";
-            this.treeView1.Size = new System.Drawing.Size(268, 450);
+            this.treeView1.Size = new System.Drawing.Size(322, 450);
             this.treeView1.TabIndex = 9;
+            this.treeView1.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterSelect);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1188, 450);
+            this.ClientSize = new System.Drawing.Size(630, 450);
             this.Controls.Add(this.treeView1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox3);
